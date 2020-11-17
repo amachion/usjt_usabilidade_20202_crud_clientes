@@ -3,8 +3,8 @@ const app = express();
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const Cliente = require('./models/cliente');
-
-mongoose.connect('mongodb+srv://user_base:outrasenha@cluster0.skf8n.mongodb.net/app-mean?retryWrites=true&w=majority')
+const dadosDeAcesso = require("./dados_de_acesso");
+mongoose.connect('mongodb+srv://'+dadosDeAcesso.usuario+':'+dadosDeAcesso.senha+'@cluster0.skf8n.mongodb.net/app-mean?retryWrites=true&w=majority')
     .then(() => {
         console.log("Conexão OK")
     }).catch(() => {
