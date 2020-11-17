@@ -28,8 +28,8 @@ export class ClienteListaComponent implements OnInit, OnDestroy {
     this.clientesSubscription  = this.clienteService
     .getListaDeClientesAtualizadaObservable()
     .subscribe((clientes: Cliente[]) => {
-    this.clientes = clientes;
-});
+      this.clientes = clientes;
+    });
   }
 
 }

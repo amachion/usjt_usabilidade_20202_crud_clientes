@@ -24,9 +24,16 @@ import { from } from 'rxjs';
     AppComponent, ClienteInserirComponent, CabecalhoComponent, ClienteListaComponent
   ],
   imports: [
-    BrowserModule, AppRoutingModule, FormsModule, BrowserAnimationsModule,
-    MatInputModule, MatCardModule, MatButtonModule,MatToolbarModule,
-    MatExpansionModule, HttpClientModule
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    MatInputModule,
+    MatCardModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatExpansionModule,
+    HttpClientModule
   ],
   providers: [ClienteService],
   bootstrap: [AppComponent]
